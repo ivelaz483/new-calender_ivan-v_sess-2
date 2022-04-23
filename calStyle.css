@@ -1,0 +1,68 @@
+.calender-body{
+    display:grid;
+    background-color: rgb(239, 239, 241);
+   width:75%;
+   height:100%;
+    margin:auto;  
+}
+
+.calendar-weekDays{
+   display:grid;
+   padding:1%;
+    grid-template-columns: repeat(7,1fr);
+    color:darkslategrey;
+    column-gap:5%;
+    font-size: .95rem;
+    text-align:center;      
+}
+
+.calendar-monthDays{
+    display:grid;
+    padding: 3%;
+    grid-template-columns: repeat(7,1fr);
+    color:darkslategrey;
+    column-gap:4%;
+    row-gap: 10px;
+    font-size: .99rem;
+    text-align:center;  
+    
+}
+
+.monthname{
+    
+    background-color:rgb(50, 230, 230);
+    color: blue;
+   padding:0;
+    width:75%;
+    margin-top:2%;
+    margin-left:12.5%;
+    margin-right: 100%;        
+}
+
+
+
+h1{
+    
+    font-size:2rem;
+    padding:5%;
+    margin-bottom:-2%;
+    text-align:center;
+}
+
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.prevMonth , .nextMonth{
+   padding:5px;
+}
+
+@media screen and (max-width: 375px) {
+    .monthname, .calender-body, .calendar-weekDays, .calendar-monthDays, button, h1 {
+      width: 0%; 
+      font-size: 10px;/* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
